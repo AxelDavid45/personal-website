@@ -43,7 +43,7 @@ export default function Home() {
           <p className="text-sm text-white/50 leading-relaxed text-center">
             Ex software engineer turned Developer Advocate at AWS. Passionate about
             empowering the LATAM developer community through content, talks, and
-            building with cloud-native technologies. Based in Mexico City.
+            building with cloud-native technologies.
           </p>
         </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
         {/* Footer */}
         <div className="mt-10 text-center opacity-0 animate-fade-in-up stagger-7">
           <p className="text-xs text-white/20">
-            Mexico City, Mexico
+            From Chiapas, Mexico
           </p>
         </div>
       </div>
