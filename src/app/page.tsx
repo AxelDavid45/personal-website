@@ -25,12 +25,12 @@ export default function Home() {
             Axel Espinosa
           </h1>
           <p className="text-lg text-white/50 font-light mb-4">
-            Fullstack Software Engineer
+            Developer Advocate at AWS for LATAM
           </p>
 
           {/* Tech stack pills */}
           <div className="flex flex-wrap justify-center gap-2">
-            {["React", "Node.js", "NestJS", "MongoDB"].map((tech) => (
+            {["AWS", "Serverless", "Node.js", "React"].map((tech) => (
               <span key={tech} className="tech-badge px-3 py-1 rounded-full text-xs text-white/40">
                 {tech}
               </span>
@@ -41,9 +41,9 @@ export default function Home() {
         {/* Bio */}
         <div className="glass-card rounded-2xl p-5 mb-6 opacity-0 animate-fade-in-up stagger-2">
           <p className="text-sm text-white/50 leading-relaxed text-center">
-            Passionate about building solutions that truly add value. Focused on
-            clean architecture, continuous learning, and sharing knowledge.
-            Based in Chiapas, Mexico.
+            Ex software engineer turned Developer Advocate at AWS. Passionate about
+            empowering the LATAM developer community through content, talks, and
+            building with cloud-native technologies. Based in Chiapas, Mexico.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
 
           {/* X / Twitter */}
           <a
-            href="https://x.com/fromchiapasdev"
+            href="https://x.com/im_not_ajscoder"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link glass-card rounded-2xl p-4 flex items-center gap-4 opacity-0 animate-fade-in-up stagger-7"
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-white">X (Twitter)</p>
-              <p className="text-xs text-white/40">@fromchiapasdev</p>
+              <p className="text-xs text-white/40">@im_not_ajscoder</p>
             </div>
             <svg className="w-4 h-4 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

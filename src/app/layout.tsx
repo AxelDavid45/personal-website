@@ -8,9 +8,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Axel Espinosa | Fullstack Developer",
+  title: "Axel Espinosa | Developer Advocate at AWS",
   description:
-    "Fullstack software engineer building valuable solutions with Node.js, React, and modern web technologies. Based in Mexico.",
+    "Developer Advocate at AWS for LATAM. Ex software engineer passionate about cloud-native technologies and empowering the developer community.",
 };
 
 export default function RootLayout({
