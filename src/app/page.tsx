@@ -43,7 +43,7 @@ export default function Home() {
           <p className="text-sm text-white/50 leading-relaxed text-center">
             Ex software engineer turned Developer Advocate at AWS. Passionate about
             empowering the LATAM developer community through content, talks, and
-            building with cloud-native technologies. Based in Chiapas, Mexico.
+            building with cloud-native technologies. Based in Mexico City.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export default function Home() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/axelespinosa"
+            href="https://github.com/AxelDavid45"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link glass-card rounded-2xl p-4 flex items-center gap-4 opacity-0 animate-fade-in-up stagger-6"
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-white">GitHub</p>
-              <p className="text-xs text-white/40">axelespinosa</p>
+              <p className="text-xs text-white/40">AxelDavid45</p>
             </div>
             <svg className="w-4 h-4 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -158,7 +158,7 @@ export default function Home() {
         {/* Footer */}
         <div className="mt-10 text-center opacity-0 animate-fade-in-up stagger-7">
           <p className="text-xs text-white/20">
-            Chiapas, Mexico
+            Mexico City, Mexico
           </p>
         </div>
       </div>
