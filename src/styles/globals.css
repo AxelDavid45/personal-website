@@ -48,8 +48,14 @@ body {
 .glow-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(60px);
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .glow-orb {
+    filter: blur(80px);
+  }
 }
 
 /* Social link hover effect */
@@ -62,11 +68,17 @@ body {
   content: "";
   position: absolute;
   inset: -2px;
-  border-radius: 16px;
+  border-radius: 12px;
   background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
+}
+
+@media (min-width: 640px) {
+  .social-link::before {
+    border-radius: 16px;
+  }
 }
 
 .social-link:hover::before {
@@ -76,6 +88,21 @@ body {
 .social-link:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(167, 139, 250, 0.3);
+}
+
+/* Disable hover transform on touch devices */
+@media (hover: none) {
+  .social-link:hover {
+    transform: none;
+  }
+  
+  .social-link:active {
+    transform: scale(0.98);
+  }
+  
+  .social-link:active::before {
+    opacity: 1;
+  }
 }
 
 /* Glass card */
