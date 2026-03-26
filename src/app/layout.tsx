@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import Script from "next/script";
 import "../styles/globals.css";
 
 const openSans = Open_Sans({
@@ -27,6 +28,15 @@ export default function RootLayout({
 
         {/* Content */}
         <div className="relative z-10">{children}</div>
+
+        {/* Plausible Analytics */}
+        <Script
+          src="https://plausible.io/js/pa-PjOTxQltUWg6j9qjq8EBs.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){(plausible.o=i||{})};plausible.init()`}
+        </Script>
       </body>
     </html>
   );
