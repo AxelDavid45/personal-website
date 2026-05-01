@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "../styles/globals.css";
 
-const openSans = Open_Sans({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Axel Espinosa | Developer Advocate at AWS",
+  title: "Axel Espinosa | Developer Advocate en AWS",
   description:
-    "Developer Advocate at AWS for LATAM. Ex software engineer passionate about cloud-native technologies and empowering the developer community.",
+    "Developer Advocate en AWS para LATAM. Ingeniero de software apasionado por tecnologías cloud-native y la comunidad de desarrolladores.",
 };
 
 export default function RootLayout({
@@ -20,16 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={openSans.className}>
-        {/* Background layers */}
+    <html lang="es" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans`}>
         <div className="mesh-gradient" />
-        <div className="noise-overlay" />
-
-        {/* Content */}
         <div className="relative z-10">{children}</div>
 
-        {/* Plausible Analytics */}
         <Script
           src="https://plausible.io/js/pa-PjOTxQltUWg6j9qjq8EBs.js"
           strategy="afterInteractive"

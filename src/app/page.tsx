@@ -2,30 +2,30 @@ export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-16">
       {/* Floating glow orbs */}
-      <div className="glow-orb w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] bg-purple-500/20 top-[10%] left-[5%] animate-pulse-slow fixed" />
-      <div className="glow-orb w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] bg-sky-500/15 bottom-[10%] right-[10%] animate-pulse-slow fixed" style={{ animationDelay: "2s" }} />
+      <div className="fixed w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-purple-500/20 rounded-full top-[10%] left-[5%] animate-pulse-slow blur-[60px] sm:blur-[80px] pointer-events-none" />
+      <div className="fixed w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] bg-sky-500/15 rounded-full bottom-[10%] right-[10%] animate-pulse-slow blur-[60px] sm:blur-[80px] pointer-events-none" style={{ animationDelay: "2s" }} />
 
       <div className="w-full max-w-lg">
         {/* Avatar + Name */}
         <div className="flex flex-col items-center mb-8 sm:mb-10 opacity-0 animate-fade-in-up">
-          {/* Animated avatar ring */}
+          {/* Profile photo */}
           <div className="relative mb-4 sm:mb-6">
             <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-violet-500 via-purple-500 to-sky-400 p-[2px]">
-              <div className="w-full h-full rounded-full bg-[#0a0a0f] flex items-center justify-center">
-                <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-br from-violet-400 to-sky-400 bg-clip-text text-transparent">
-                  AE
-                </span>
-              </div>
+              <img
+                src="https://static-pages-axelespinosa.s3.us-east-1.amazonaws.com/profile/profile-picture.jpeg"
+                alt="Axel Espinosa"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
             {/* Status indicator */}
-            <div className="absolute bottom-1 right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-emerald-500 border-[3px] border-[#0a0a0f]" />
+            <div className="absolute bottom-1 right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-emerald-500 border-[3px] border-[#0f0f11]" />
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 tracking-tight text-center">
             Axel Espinosa
           </h1>
           <p className="text-base sm:text-lg text-white/50 font-light mb-4 text-center px-2">
-            Developer Advocate at AWS for LATAM
+            Developer Advocate en AWS para LATAM
           </p>
 
           {/* Tech stack pills */}
@@ -41,9 +41,9 @@ export default function Home() {
         {/* Bio */}
         <div className="glass-card rounded-xl sm:rounded-2xl p-4 sm:p-5 mb-4 sm:mb-6 opacity-0 animate-fade-in-up stagger-2">
           <p className="text-sm text-white/50 leading-relaxed text-center">
-            Ex software engineer turned Developer Advocate at AWS. Passionate about
-            empowering the LATAM developer community through content, talks, and
-            building with cloud-native technologies.
+            Ex ingeniero de software, ahora Developer Advocate en AWS. Apasionado por
+            empoderar a la comunidad de desarrolladores en LATAM a través de contenido,
+            charlas y tecnologías cloud-native.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function Home() {
 
           {/* Blog */}
           <a
-            href="https://blog.ademapps.dev"
+            href="https://blog.ademapps.dev?utm_source=linktree&utm_medium=social&utm_campaign=bio_link"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link glass-card rounded-xl sm:rounded-2xl p-3 sm:p-4 flex items-center gap-3 sm:gap-4 opacity-0 animate-fade-in-up stagger-4"
@@ -158,7 +158,7 @@ export default function Home() {
         {/* Footer */}
         <div className="mt-8 sm:mt-10 text-center opacity-0 animate-fade-in-up stagger-7">
           <p className="text-[11px] sm:text-xs text-white/20">
-            From Chiapas, Mexico
+            Desde Chiapas, México 🇲🇽
           </p>
         </div>
       </div>
